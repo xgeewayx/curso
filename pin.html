@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest PIN</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        section {
+            position: relative;
+        }
+
+        .enviar, .favorito, .guardar{
+            background: url('assets/img/sprite-pin.fw.png');
+            width: 20px;
+            height: 20px;
+            
+        }
+
+        .enviar-contenedor, .favorito-contenedor, .guardar-contenedor{
+            position: absolute;
+        }
+
+        .favorito-contenedor{
+            left: 40px;
+        }
+
+        .guardar-contenedor{
+            top: 1px;
+            right: 1px;
+            background:#bd081c ;
+            color: #fff;
+            font-weight: bold;
+            padding: 4px 5px;
+            border-radius: 4px;
+        }
+
+        .enviar-contenedor, .favorito-contenedor{
+
+            background: #ccc;
+            padding: 3px;
+            border-radius: 4px;
+        }
+
+        .enviar {
+            background-position: 0px 0;
+        }
+
+
+        .favorito {
+            background-position: -22px 0;
+            
+        }
+
+        .guardar {
+            background-position: 20px 0;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .pin {
+            width: 230px;
+        }
+
+        .top{
+            background:url('assets/img/imagen.jpg');
+            height: 348px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <article class="pin">
+            <section class="top">
+                <div class="enviar-contenedor">
+                    <div class="enviar"></div>
+                </div>
+
+                <div class="favorito-contenedor">
+                    <div class="favorito"></div>
+                </div>
+
+                <div class="guardar-contenedor">
+                    <div class="guardar"></div>
+                    <span>Guardar</span>
+
+                </div>
+                
+        </section>
+
+            <section class="bottom">
+                <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni consequuntur voluptates id nulla officia? Ratione esse corporis, iusto praesentium in quam, asperiores dolorum sint magni, sed perferendis vel perspiciatis necessitatibus.</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis ea soluta odit error, quisquam, quae expedita doloremque provident vitae velit quod ut cum minima eaque dicta optio esse eum animi?</p>
+            </section>
+        </article>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion a JS</title>
+    <style>
+        p{
+            transition: step-start;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <div>
+            <label for="">Numero 1:</label>
+            <input type="text" id="numero1"/>
+        </div>
+        <div>
+            <label for="">Numero 2:</label>
+            <input type="text" id="numero2">
+        </div>
+        <div>
+            <label for="">Numero 3:</label>
+            <input type="text" id="numero3" >
+        </div>
+        <button id="boton">Mostrar cual es el numero mayor</button>
+
+        <p id="feedback"></p>
+    </main>
+    
+    <script>
+         let refBoton = document.getElementById("boton");
+         let refFeedback = document.getElementById("feedback");
+
+        refBoton.addEventListener("click", onClick);
+
+        function onClick(){
+        let refNumero1 = parseInt(document.getElementById("numero1").value);
+        let refNumero2 = parseInt(document.getElementById("numero2").value);
+        let refNumero3 = parseInt(document.getElementById("numero3").value);
+
+        if (isNaN(refNumero1) || isNaN(refNumero2) || isNaN(refNumero3) );
+        refFeedback.innerText = "no todas las cajas tienen valor numerico";
+        refFeedback.style.color = "red";
+        } else {
+          
+                if (refNumero1 > refNumero2 && refNumero1 > refNumero3)
+                    {
+                        refFeedback.innerText = "el numero mayor es:" + refNumero1;
+                    }
+                
+
+                else if (refNumero2 > refNumero1 && refNumero2 > refNumero3)
+                {
+                        refFeedback.innerText = "el numero mayor es:" + refNumero2;
+                }
+                
+
+                else {
+                    refFeedback.innerText = "el numero mayor es:" + refNumero3;
+                     }
+                     refFeedback.style.color = "green";
+                    
+                    
+                }
+            
+            
+        
+            // alert("se presiono el boton");
+        
+
+    </script>
+</body>
+</html>
